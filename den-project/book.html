@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        input {
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            height: 100;
+
+        }
+
+        body {
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+        }
+
+        form {
+            padding-left: 250px;
+
+        }
+
+        label {
+
+            font-size: larger;
+        }
+
+        button {
+            border: 2px solid #20203a;
+            border-radius: 15px;
+            font-size: larger;
+            font-weight: bold;
+            padding: 20px;
+            color: #fff;
+            background-color: #20203a;
+            margin-left: 420px;
+            margin-top: 50px;
+        }
+
+        .popup img {
+            width: 80px;
+            height: 80px;
+            margin-top: -40px;
+            border-radius: 50%;
+            box-shadow: 0 3px 10px #bbb;
+        }
+
+        .popup {
+            width: 350px;
+            height: 250px;
+            background-color: #fff;
+            border-radius: 3px;
+            position: absolute;
+            top: 0;
+            left: 40%;
+            transform: scale(0.5);
+            text-align: center;
+            padding: 0 30px 30px;
+            color: #333;
+            visibility: hidden;
+
+        }
+
+        .open-popup {
+            visibility: visible;
+            top: 120%;
+            transform: scale(1);
+            transition: 3ms;
+
+        }
+
+
+
+        .popup h2 {
+
+            font-size: 30px;
+            font-weight: 400px;
+            margin: 30px 0 10px;
+        }
+
+        .popup button {
+            width: 100%;
+            margin-top: 10px;
+            margin-left: -10px;
+            padding: 10px 0;
+            background: rgb(86, 171, 55);
+            color: #fff;
+            border: 0;
+            outline: none;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 3px 10px #b9afaf;
+        }
+    </style>
+
+
+
+</head>
+
+<body class="body-book">
+
+    <div style="background-color: #20203a;min-height:5vh;">
+        <img src="image/skyline-logo.png" class="logo1" alt="">
+    </div>
+    <div class="containar">
+        <h1 style="text-align: center; padding-top:40PX; text-decoration: underline;">BOOK NOW</h1>
+        <form action="conect1.php" method="post">
+            <h2 class="tital">personal information :</h2>
+            <table class="tab1">
+                <tr>
+                    <td><label for="name">Full name :</label></td>
+                    <td><input type="text" name="Fullname" id="name" required placeholder="Enter your name"
+                            style="width: 300px; height: 30px;"></td>
+                </tr> <br>
+                <tr>
+                    <td><label for="age">Age :</label></td>
+                    <td> <input type="text" name="age" id="age" required style="width: 300px; height: 30px;"></td>
+                </tr> <br>
+                <tr>
+                    <td><label for="gernder" required>Gernder:</label></td>
+                    <td>
+                        <label for="radio1">Male</label>
+                        <input type="radio" name="maleORfemle" id="radio1" value="male">
+                        <label for="radio2">Female</label>
+                        <input type="radio" name="maleORfemle" id="radio2" value="female">
+                    </td>
+                </tr> <br>
+                <tr>
+                    <td> <label for="phone">Phone :</label></td>
+                    <td> <input type="text" name="phone" id="phone" required style="width: 300px; height: 30px;"></td>
+                </tr> <br>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><input type="text" name="address" id="address" required style="width: 300px; height: 30px;">
+                    </td>
+                </tr> <br>
+                <tr>
+                    <td><label for="jop">Jop :</label></td>
+                    <td><input type="text" name="jop" id="jop" required style="width: 300px; height: 30px;"></td>
+                </tr> <br>
+            </table>
+
+            <h2 class="tital"> Medical :</h2>
+            <table class="tab2">
+
+                <tr>
+                    <td><label for="tex-com">Chief complain :</label></td>
+                    <td><input id="tex-com" type="text" name="chief_complain" required
+                            style="width: 300px; height: 30px;"></td>
+                </tr> <br>
+
+                <tr>
+                    <td><label for="" required>Do you suffer from diseases?</label></td>
+                    <td>
+                        <label for="checkbox1">yes</label>
+                        <input type="radio" name="YESorNO1" id="checkbox1" value="yes" x>
+                        <label for="checkbox2">no</label>
+                        <input type="radio" name="YESorNO1" id="checkbox2" value="no">
+                    </td>
+                </tr> <br>
+                <tr>
+                    <td><label for="what-is-it">What is it ?</label></td>
+                    <td><input id="what-is-it" type="text" name="what_is_it1" required
+                            style="width: 300px; height: 30px;"></td>
+                </tr> <br>
+                <tr>
+                    <td><label for="" required>Are you taking medication ?</label></td>
+                    <td>
+                        <label for="checkbox3">yes</label>
+                        <input id="checkbox3" type="radio" name="YESorNO2" value="yes">
+                        <label for="checkbox4">no</label>
+                        <input id="checkbox4" type="radio" name="YESorNO2" value="no">
+                    </td>
+                </tr> <br>
+                <tr>
+                    <td><label for="what-is-it2">What is it ?</label></td>
+                    <td><input id="what-is-it2" type="text" name="what_is_it2" required
+                            style="width: 300px; height: 30px;"></td>
+                </tr> <br>
+
+                <tr>
+                    <td><label for="" required>Is this your first visit to the Dentist?</label></td>
+                    <td>
+                        <label for="checkbox5">yes</label>
+                        <input id="checkbox5" type="radio" name="YESorNO3" value="yes">
+                        <label for="checkbox6">no</label>
+                        <input id="checkbox6" type="radio" name="YESorNO3" value="no">
+                    </td>
+                </tr> <br>
+                <tr>
+                    <td><label for="date">Date of visit?</label></td>
+                    <td><input id="date" type="date" required name="date"></td>
+                </tr> <br>
+                <tr>
+                    <td><label for="time">Prefered time to visit?</label></td>
+                    <td><select name="time" required id="time">
+                            <option value="0" selected disabled>chosse time </option>
+                            <option value="06:00-07:00">06:00-07:00</option>
+                            <option value="07:00-08:00">07:00-08:00</option>
+                            <option value="08:00-09:00">08:00-09:00</option>
+                            <option value="09:00-10:00">09:00-10:00</option>
+                            <option value="10:00-11:00">10:00-11:00</option>
+                        </select></td>
+
+                </tr> <br>
+
+            </table>
+
+            <button type="submit" id="button">BOOK NOW</button>
+            <br><br><br><br><br>
+
+        </form>
+        <div class="popup" id="popup">
+
+            <img src="image/correct.png" alt="">
+            <h2>Thank You!</h2>
+            <p>your details has been successfully submitted. Thanks!</p>
+            <br>
+            <button type="button" id="closebutton">OK</button>
+        </div>
+
+    </div>
+
+
+
+   <!--   <script>
+        let popup = document.getElementById("popup");
+        let bookButton = document.getElementById("button");
+        let closeButton = document.getElementById("closebutton");
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+        bookButton.addEventListener("click", openPopup);
+        closeButton.addEventListener("click", closePopup);
+    </script>-->
+
+     <script>
+    
+       
+       let bookButton = document.getElementById("button");
+        function openPopup() {
+            var input1 = document.getElementById("name").value;
+            var input2 = document.getElementById("age").value;
+            var input4 = document.getElementById("phone").value;
+            var input5 = document.getElementById("address").value;
+            var input6 = document.getElementById("jop").value;
+            var input7 = document.getElementById("tex-com").value;
+            var input9 = document.getElementById("what-is-it").value;
+            var input11 = document.getElementById("what-is-it2").value;
+            var input13 = document.getElementById("date").value;
+            var input14 = document.getElementById("time").value;
+
+
+
+            if (input1 && input2 && input4 && input5 &&input6&& input7 && input9 && input11 && input13 && input14) {
+              alert("this book successefully ");
+                //let popup = document.getElementById("popup");
+               // popup.classList.add("open-popup");
+              // swal("Good job!", "you book online successefully!", "success");
+
+            } else {
+            alert("الرجاء إدخال جميع البيانات المطلوبة");
+             // swal ( "Oops" ,  "الرجاء إدخال جميع البيانات المطلوبة " ,  "error" );
+
+            }
+        }
+        bookButton.addEventListener("click", openPopup);
+       
+    </script>
+
+
+
+
+</body>
+
+</html>

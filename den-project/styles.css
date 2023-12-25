@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    background-color:#0A2844 ; /* #20203a   or #102e51 */
+}
+
+.logo1 {
+    margin: 5px 70px;
+    height: 50px;
+    width: 150px;
+
+}
+
+.head-div {
+    display: flex;
+    
+}
+
+
+
+.main-header {
+    padding-top: 20px;
+    display: flex;
+    text-transform: uppercase;
+    list-style: none;
+
+}
+.main-header li {
+    list-style: none;
+}
+
+.main-header li a {
+
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+   
+}
+
+#home {
+    min-height: 90vh;
+    background-image: url(image/backg4.jpg);
+    background-repeat: no-repeat;
+
+    background-position: top;
+    background-size: cover;
+
+    padding-top: 190px;
+    padding-left: 100px; /* 690*/
+    font-size: xx-large;
+    color: aliceblue;
+}
+
+
+.book_online {
+    color: aliceblue;
+    border: 3px solid #fff;
+    background-color:#0A2844 ; /*#20203a;*/
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 10px 10px;
+}
+
+
+
+
+
+
+#about {
+    background: linear-gradient(#0A2844, #124475, #0A2844);
+    min-height: 60vh;
+    width: 100%;
+    padding: 5% 5%;
+}
+
+.about-us {
+
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin-top: 20px;
+
+
+}
+
+.about-head {
+    color: #fff;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.about-contant {
+    margin-top: 50px;
+    color: #E0E0F6;
+    font-size: larger;
+    letter-spacing: 2px;
+}
+
+.about-image img {
+    width: 300px;
+    height: 300px;
+    transition: 0.8s ease;
+    border: 3px solid #22456C;
+    border-radius: 5px;
+    box-shadow: 0 3px 20px #ccc;
+}
+
+.about-image img:hover {
+    transform: scale(1.09);
+    border-radius: 30px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+#services {
+    background: linear-gradient(#0A2844, #124475, #0A2844);
+  /*  background: linear-gradient(#252551,#282857,#737399, rgb(247, 247, 247),#7f7fa3,#252551);*/
+  /*  background-color:     rgb(176, 176, 223);    ,#20203a */
+    min-height: 90vh;
+    width: 100%;
+
+}
+
+.service-warpper {
+    padding: 5% 7%;
+}
+
+.services {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.services h1 {
+    color: #fff;
+    font-size: 4em;   /* 4*16 */
+    letter-spacing: 3px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*  في كل صف 4 اعمده مساحتهم متساويه*/
+    gap: 50px;
+    margin-top: 80px;
+
+}
+
+.card2 {
+    height: 280px;
+    width: 280px;
+    
+    background-color: #E0E0F6;
+    padding: 5% 8%;
+    border: 1px solid #7B9DC6;
+    border-radius: 10px;
+    transition: 2s ease;
+}
+
+.card2 button {
+    border: 1px solid #20203a;
+    border-radius: 7px;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #20203a;
+    color: aliceblue;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 2px;
+
+
+}
+
+.card2:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+#beforeAafter {
+    background-color: rgb(224, 224, 246);
+    min-height: 70vh;
+}
+
+#contact-us {
+    min-height: 40vh;
+    
+    background: linear-gradient(#cdcdf1, #fefefe, #cdcdf1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-left: 250px;
+    font-size: larger;
+    color: azure;
+    font-weight: bolder;
+    
+}
+
+div.cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+div li {
+    text-decoration: none;
+    list-style: square;
+    color: black;
+}
+div a img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    transition: 0.7s ease;
+}
+.location{
+    display: flex;
+    flex-direction: row;
+}
+div img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+  
+
+}
+
+div a img:hover {
+
+    margin-right: 20px;
+    transform: scale(1.2);
+
+}
+
+.tab1 {
+    border: 2px solid #20203a;
+    border-radius: 20PX;
+    margin-top: -100px;
+    margin-left: 150px;
+    width: 700px;
+    height: 400px;
+    font-size: x-large;
+    padding-left: 20px;
+}
+
+.tital {
+    padding-left: 160px;
+    padding-top: 30px;
+}
+
+.tab2 {
+    border: 2px solid #20203a;
+    border-radius: 20PX;
+    margin-top: -130px;
+    margin-left: 150px;
+    width: 700px;
+    height: 500px;
+    font-size: x-large;
+    padding-left: 10px;
+
+}
+
+/*before&after  */
+
+.h1-classy {
+    text-align: center;
+    font-weight: bolder;
+    color: #20203a;
+    padding-top: 30px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    padding-bottom: 40px;
+
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.card {
+    background-color: #22456c;
+    width: 25%;
+    box-shadow: 0 5px 25px;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.8s ease;
+
+}
+
+.card:hover {
+    transform: scale(1.08);
+}
+
+.img-b-a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.prag {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    color: #E0E0F6;
+}
+
+footer {
+    background-color: rgb(224, 224, 246);
+    border: 3px solid rgb(224, 224, 246);
+
+}
+
+.foo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer span {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+footer p {
+    padding-left: 60px;
+}
+
+footer i {
+    padding-right: 80px;
+    font-size: 18px;
+
+}
+
+
+
+
+

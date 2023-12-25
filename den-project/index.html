@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
+    <title>Dentist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div >
+
+            <div class="head-div">
+                <img src="image/skyline-logo.png" alt="" class="logo1">
+                <ul class="main-header">
+                    <li><a href="#home" style="margin-left: 500px;">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#beforeAafter">before&after</a></li>
+                    <li><a href="#contact-us">contact us</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" style="min-height: 100vh;"> <!-- home -->
+        <br><br>
+        <h4>TRUSTED HALA EMAD <br> TECH CENTER DENTISTS </h4> <br>
+        <h1> Exceptional care
+            for all ages</h1>
+        <br><br>
+        <a href="book.html" class="book_online">Book Online</a>
+
+
+    </section>
+
+    <section id="about"> <!-- about -->
+
+        <div class="container"> 
+            <div class="about-head">
+                <h1>About Us</h1>
+                <br>
+            </div>
+            <div class="about-us">
+                <div class="about-image">
+                    <img src="image/about.jpg" alt="">
+                </div>
+                <div class="about-image">
+                    <img src="image/cadcam.jpg" alt="">
+                </div>
+                <div class="about-contant">
+                    <h2> Dr.Hala Emad</h2>
+                    <p>Specialist in medicine, surgery, and cosmetic dentistry</p>
+                    <br>
+                    <p> <strong style="font-size: larger;">The clinic includes :</strong>
+                        Diagnosis by the latest x.ray devices and with camera .
+                        The latest dental instrument sterilization device .
+                        Advanced dental equipment and techniques such as digital impressions, laser dentistry, CAD CAM ,
+                        ,3D imaging, Hollywood smile and cosmetic veneers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="services"> <!-- services -->
+
+
+
+        <div>
+            <div class="service-warpper">
+                <div class="services">
+                    <h1>Our services</h1>
+                    <br>
+                    <div class="cards">
+                        <div class="card2">
+                            <i class="fa-solid fa-tooth"></i>
+                            <h2>operative</h2>
+                            <br>
+
+                            <p style="font-size: 22px;"> remove caries & fill with cosmetic dental fillings </p>
+                            <br>
+                            <p id="prag1" style="display: none; font-size: 20px;">include composite ,amalgam,glass
+                                ionomer and composite veneer</p>
+
+                            <button onclick="showparagraph1()" id="showButton1">more about</button>
+                        </div>
+
+                        <div class="card2">
+                            <i class="fa-solid fa-tooth"></i>
+                            <h2>Endodontic</h2>
+                            <br>
+                            <p style="font-size: 20px;"> Root canal treatment using the latest digital techniques</p>
+                            <br>
+                            <p id="prag2" style="display: none; font-size: 20px;">remove caries in pulp tissue & fill
+                                with gatta percha (RCT&APEXECTOMY)</p>
+
+                            <button onclick="showparagraph2()" id="showButton2">more about</button>
+                        </div>
+
+                        <div class="card2">
+                            <i class="fa-solid fa-tooth"></i>
+                            <h2>pediatric</h2>
+                            <br>
+                            <p style="font-size: 24px;">Children's dental treatment</p>
+                            <br>
+                            <p id="prag3" style="display: none;font-size: 20px;">Include pulpotomy , pulpectomy , st.st
+                                crown and space maintainer</p>
+
+                            <button onclick="showparagraph3()" id="showButton3">more about</button>
+                        </div>
+
+                        <div class="card2">
+                            <i class="fa-solid fa-tooth"></i>
+                            <h3 style="font-size: 21px;">Removable prothodontic</h3>
+                            <br>
+                            <p style="font-size: 20px;">Restore of missing teeth with removable prothodontic.</p>
+                            <br>
+                            <p id="prag4" style="display: none;font-size: 20px;">Include complete denture , partial
+                                denture and implant supported over denture.</p>
+
+                            <button onclick="showparagraph4()" id="showButton4">more about</button>
+                        </div>
+
+                        <div class="card2">
+                            <i class="fa-solid fa-tooth"></i>
+                            <h2>Periodontic </h2>
+                            <br>
+                            <p style="font-size: 21px;">Treatment of gums and oral diseases.</p>
+                            <br>
+                            <p id="prag5" style="display: none;font-size: 20px;">Include scaling , polishing , root
+                                planing and whitening of teeth.</p>
+
+                            <button onclick="showparagraph5()" id="showButton5">more about</button>
+                        </div>
+
+                        <div class="card2">
+                            <i class="fa-solid fa-tooth"></i>
+                            <h2>Fixed prothodontic</h2>
+                            <br>
+                            <p style="font-size: 21px;">Restore of missing teeth with fixed prothodontic.</p>
+                            <br>
+                            <p id="prag6" style="display: none;font-size: 20px;">Include crown , onlay , bridge , veneer
+                                and Hollywood smile</p>
+
+                            <button onclick="showparagraph6()" id="showButton6">more about</button>
+                        </div>
+
+                        <div class="card2">
+                            <i class="fa-solid fa-tooth"></i>
+                            <h2>Surgery</h2>
+                            <br>
+                            <p style="font-size: 21px;">Removing of teeth , remaining root and lesion .</p>
+                            <br>
+                            <p id="prag7" style="display: none;font-size: 20px;">Include simple extraction , surgical
+                                extraction , impaction and removing lesion.</p>
+
+                            <button onclick="showparagraph7()" id="showButton7">more about</button>
+                        </div>
+                        <div class="card2">
+                            <i class="fa-solid fa-tooth"></i>
+                            <h2>Orthodontics</h2>
+                            <br>
+
+                            <p style="font-size: 21px;">aligning your bite and straightening your teeth</p>
+                            <br>
+                            <p id="prag8" style="display: none;font-size: 20px;"> Include fixed , removable and
+                                transparent.</p>
+
+                            <button onclick="showparagraph8()" id="showButton8">more about</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="beforeAafter"> <!-- before&after -->
+        <div class="b-a-h1">
+            <h1 class="h1-classy"> before and after</h1>
+
+        </div>
+
+
+        <div >
+            <div class="row">
+                <div class=" card">
+
+                    <div class="BaA">
+                        <img src="image/Before-and-after-veneers.jpg" class="img-b-a" alt="">
+                        <br>
+                        <p class="prag"> composite filling </p>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="BaA">
+                        <img src="image/b&a2.jpg" class="img-b-a" alt="">
+                        <br>
+                        <p class="prag"> veneer cosmetic </p>
+                    </div>
+                </div>
+
+                <div class="  card">
+
+                    <div class="BaA">
+                        <img src="image/b&a3.jpg" class="img-b-a" alt="">
+                        <br>
+                        <p class="prag">fixed prothodontic(bridge) </p>
+                    </div>
+                </div>
+
+                <div class="  card">
+
+                    <div class="BaA">
+                        <img src="image/b&a 1.jpg" class="img-b-a" alt="">
+                        <br>
+                        <p class="prag"> Endodontic treatment </p>
+                    </div>
+                </div>
+                <div class=" card">
+
+                    <div class="BaA">
+                        <img src="image/b&a8.jpg" class="img-b-a" alt="">
+                        <br>
+                        <p class="prag"> scaling & polishing </p>
+                    </div>
+                </div>
+                <div class=" card">
+
+                    <div class="BaA">
+                        <img src="image/b&a6.jpg" class="img-b-a" alt="">
+                        <br>
+                        <p class="prag"> composite filling </p>
+                    </div>
+                </div>
+                <div class="  card">
+
+                    <div class="BaA">
+                        <img src="image/b&a10.jpg" class="img-b-a" alt="">
+                        <br>
+                        <p class="prag"> Complete denture </p>
+                    </div>
+                </div>
+                <div class=" card">
+
+                    <div class="BaA">
+                        <img src="image/b&a11.jpg" class="img-b-a" alt="">
+                        <br>
+                        <p class="prag"> Whitening of teeth </p>
+                    </div>
+                </div>
+                <div class=" card">
+
+                    <div class="BaA">
+                        <img src="image/b&a12.jpg" class="img-b-a" alt="">
+                        <br>
+                        <p class="prag"> Pediatric dentistry </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact-us"> <!--contact us -->
+        <p style="font-weight: bold; font-size: xx-large;margin-left: 350px; color: black;">Connect with us:</p>
+        <br><br>
+        <div class="cont">
+            <div style=" margin-left: -150px;">
+
+                <ul>
+                    <p style="font-weight: bold; font-size: xx-large;color: black;">menu :</p>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#beforeAafter">before&after</a></li>
+
+
+                </ul>
+            </div>
+
+            <div>
+                <p style="font-weight: bold; font-size: xx-large;color: black;">location :</p>
+                <div class="location">
+                    <img src="image/placeholder.png" alt="" />
+                    <p style="font-weight: bold; font-size: larger;color: black; padding-top:11px;">104 loram ipusm</p>
+                </div>
+                <div class="location">
+                    <img src="image/telephone.png" alt="">
+                    <p style="font-weight: bold; font-size: larger;color: black; padding-top:11px;">( +01 098629610)</p>
+                </div>
+                <div class="location">
+                    <img src="image/email.png" alt="">
+                    <p style="font-weight: bold; font-size: larger;color: black; padding-top:11px;">
+                        info@vSkylineDental.com</p>
+                </div>
+
+
+
+            </div>
+            <div>
+                <p style="font-weight: bold; font-size: xx-large;color: black;">social link :</p>
+                <a href="#"> <img src="image/facebook.png" alt=""></a>
+                <a href="#"><img src="image/whatsapp (2).png" alt=""></a>
+                <a href="#"><img src="image/instagram.png" alt=""></a>
+                <a href="#"><img src="image/twitter.png" alt=""></a>
+            </div>
+
+
+
+
+        </div>
+
+        <br><br><br>
+
+    </section>
+
+    <footer>
+        <div class="foo">
+            <div>
+                <p>
+                    <span>©</span>Skyline Dental |
+                    <a href="/privacy-policy/">Privacy Policy</a> |
+                    <a href="/accessibility-statement/">Accessibility Statement</a>
+                </p>
+            </div>
+            <div>
+                <i>
+                    BY_samar_emad-eldeen
+                </i>
+            </div>
+        </div>
+
+
+
+
+        </div>
+
+    </footer>
+
+</body>
+<script src="script.js">
+
+</script>
+
+</html>
